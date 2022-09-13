@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Listing from "./components/Listing";
+// import Fruit from "./components/Fruit";
 
 // const theFruits = [
 //   { id: 1, name: "Apple", color: "red" },
@@ -30,6 +31,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/listing" element={<Listing />} />
+          <Route path="/fruit" element={<Fruit />} />
+          
         </Routes>
       </BrowserRouter>
     </>
