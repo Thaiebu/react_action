@@ -1,5 +1,5 @@
 import "./App.css";
-// import Fruit from "./components/Fruit";
+import Fruit from "./components/Fruit";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/listing" element={<Listing />} />
-          {/* <Route path="/fruit" element={<Fruit />} /> */}
+          <Route path="/fruit" element={<Fruit />} />
           
         </Routes>
       </BrowserRouter>
