@@ -33,3 +33,8 @@ jobs:
         run: npm i
       - name: Run a one-line script
         run: npm run build
+      - name: pull-request
+            uses: repo-sync/pull-request@v2
+        with:
+           destination_branch: "master"
+        
