@@ -32,4 +32,4 @@ jobs:
       - name: install npm
         run: npm i
       - name: Run a one-line script
-        run: npm build
+        run: npm run build
