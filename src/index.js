@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    {/* <CountApple /> */}
-    {/* <Fruit name="something" />
-    <Fruit name="Apple" /> */}
+    <CountApple />
+    <Fruit name="something" />
+    <Fruit name="Apple" />
   </React.StrictMode>
 );
 
