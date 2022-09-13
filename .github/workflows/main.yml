@@ -33,7 +33,11 @@ jobs:
         run: npm i
       - name: Run a one-line script
         run: npm run build
-      - name: pull-request
-        uses: repo-sync/pull-request@v2
-        with:
-          destination_branch: "master"
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+        REPO: react_action
+        BRANCH: master # The branch name where you want to push the assets
+        FOLDER: atch-1 # The directory where your assets are generated
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
