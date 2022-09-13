@@ -33,8 +33,10 @@ jobs:
         run: npm i
       - name: Run a one-line script
         run: npm run build
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
         with:
           destination_branch: "master"
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_label: ""
+          pr_title: ""
